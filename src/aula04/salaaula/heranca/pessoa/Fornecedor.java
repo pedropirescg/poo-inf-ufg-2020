@@ -1,4 +1,4 @@
-package aula4.salaaula.heranca;
+package aula04.salaaula.heranca.pessoa;
 
 public class Fornecedor extends PessoaJuridica {
     private String produtos;

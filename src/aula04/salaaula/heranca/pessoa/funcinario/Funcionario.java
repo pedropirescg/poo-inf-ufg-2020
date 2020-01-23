@@ -1,4 +1,6 @@
-package aula4.salaaula.heranca;
+package aula04.salaaula.heranca.pessoa.funcinario;
+
+import aula04.salaaula.heranca.pessoa.PessoaFisica;
 
 public class Funcionario extends PessoaFisica {
     private int matricula;

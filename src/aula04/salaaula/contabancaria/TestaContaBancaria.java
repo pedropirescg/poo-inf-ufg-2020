@@ -1,4 +1,4 @@
-package aula4.salaaula.contabancaria;
+package aula04.salaaula.contabancaria;
 
 import java.util.ArrayList;
 import java.util.List;

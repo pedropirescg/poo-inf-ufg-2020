@@ -1,4 +1,4 @@
-package aula4.salaaula.heranca;
+package aula04.salaaula.heranca.pessoa;
 
 public class PessoaFisica extends Pessoa {
     private String cpf;
@@ -38,12 +38,12 @@ public class PessoaFisica extends Pessoa {
 
     public String toString() {
         StringBuffer sb = new StringBuffer();
-        sb.append("Nome da Pessoa Física: " + this.getNome());
-        sb.append("Endereço da Pessoa Física: " + this.getEndereco());
-        sb.append("Telefone da Pessoa Física " + this.getTelefone());
-        sb.append("CPF da Pessoa Física: " + this.getCpf());
-        sb.append("Estado Civil da Pessoa Física: " + this.getEstadoCivil());
-        sb.append("Sexo da Pessoa Física: " + this.getSexo());
+        sb.append("\nNome da Pessoa Física: " + this.getNome());
+        sb.append("\nEndereço da Pessoa Física: " + this.getEndereco());
+        sb.append("\nTelefone da Pessoa Física " + this.getTelefone());
+        sb.append("\nCPF da Pessoa Física: " + this.getCpf());
+        sb.append("\nEstado Civil da Pessoa Física: " + this.getEstadoCivil());
+        sb.append("\nSexo da Pessoa Física: " + this.getSexo());
         return sb.toString();
     }
 }

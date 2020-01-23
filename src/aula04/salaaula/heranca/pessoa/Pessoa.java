@@ -1,4 +1,4 @@
-package aula4.salaaula.heranca;
+package aula04.salaaula.heranca.pessoa;
 
 public class Pessoa {
     private String nome;
@@ -37,9 +37,9 @@ public class Pessoa {
 
     public String toString() {
         StringBuffer sb = new StringBuffer();
-        sb.append("Nome da Pessoa: " + this.getNome());
-        sb.append("Endereço da Pessoa: " + this.getEndereco());
-        sb.append("Telefone da Pessoa: " + this.getTelefone());
+        sb.append("\nNome da Pessoa: " + this.getNome());
+        sb.append("\nEndereço da Pessoa: " + this.getEndereco());
+        sb.append("\nTelefone da Pessoa: " + this.getTelefone());
         return sb.toString();
     }
 }

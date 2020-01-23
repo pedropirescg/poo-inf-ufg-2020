@@ -1,4 +1,4 @@
-package aula4.salaaula.heranca;
+package aula04.salaaula.heranca.pessoa;
 
 public class PessoaJuridica extends Pessoa {
     private String cnpj;
