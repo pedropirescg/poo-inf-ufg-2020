@@ -1,4 +1,4 @@
-package as1c;
+package aula01.as1c;
 
 public class Aluno {
     private String nome;

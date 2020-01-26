@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Repositorio.iml" filepath="$PROJECT_DIR$/../Repositorio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caelum-curso.iml" filepath="$PROJECT_DIR$/caelum-curso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poo20204_201515577_pedropires.iml" filepath="$PROJECT_DIR$/poo20204_201515577_pedropires.iml" />
+    </modules>
+  </component>
+</project>
