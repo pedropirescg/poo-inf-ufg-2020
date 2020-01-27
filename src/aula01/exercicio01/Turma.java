@@ -18,9 +18,7 @@ public class Turma {
         this.alunos = alunos;
     }
 
-    public void adicionaAlunos(Aluno a) {
-        this.alunos.add(a);
+    public void adicionaAlunos(Integer matricula, String nome) {
+        this.alunos.add(matricula, nome);
     }
-
-
 }

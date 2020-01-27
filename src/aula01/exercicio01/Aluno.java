@@ -4,8 +4,13 @@ public class Aluno {
     private String nome;
     private Integer matricula;
 
+    public Aluno(Integer matricula, String nome) {
+        this.matricula = matricula;
+        this.nome = nome;
+    }
+
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -13,7 +18,7 @@ public class Aluno {
     }
 
     public Integer getMatricula() {
-        return matricula;
+        return this.matricula;
     }
 
     public void setMatricula(Integer matricula) {

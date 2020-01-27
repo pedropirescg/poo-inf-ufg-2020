@@ -9,28 +9,26 @@ public class TesteListaDeAlunos {
 
         int i, nrAlunos;
 
-        System.out.println("Informe a quantidade de matrículas que será lista");
+        System.out.println("Informe a quantidade de matrículas que será listada:");
         nrAlunos = entrada.nextInt();
 
         Turma[] listaAlunos;
         listaAlunos = new Turma[nrAlunos];
 
         Integer matricula;
-        String nome;
+        String nome = null;
 
-        for (i = 1; i < nrAlunos; i++) {
+        System.out.println("\n Lista de Alunos:");
+        System.out.println(listaAlunos.toString());
 
-            Aluno aluno = new Aluno();
+        for (i = 0; i < nrAlunos; i++) {
 
-            System.out.println("Digite a matrícula do aluno");
+            Turma aluno = new Turma();
+
+            System.out.println("Digite a matrícula e o nome do aluno");
             matricula = entrada.nextInt();
-            aluno.setMatricula(matricula);
-
-            System.out.println("Digite o nome do aluno");
-            nome = entrada.nextLine();
-            aluno.setNome(nome);
+            aluno.adicionaAlunos(matricula, nome);
 
         }
-        System.out.println(listaAlunos);
     }
 }
