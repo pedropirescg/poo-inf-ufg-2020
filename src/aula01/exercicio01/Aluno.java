@@ -8,7 +8,9 @@ public class Aluno {
         this.matricula = matricula;
         this.nome = nome;
     }
+    public Aluno(){
 
+    }
     public String getNome() {
         return this.nome;
     }
@@ -28,8 +30,7 @@ public class Aluno {
     public String toString() {
         StringBuffer lista = new StringBuffer();
 
-        lista.append("\nImprimindo todos os alunos da turma: ");
-        lista.append("\n" + this.getMatricula() + " - " + this.getNome());
+        lista.append("\nMatrícula: " + this.getMatricula() + " - Nome: " + this.getNome());
         return lista.toString();
     }
 }
