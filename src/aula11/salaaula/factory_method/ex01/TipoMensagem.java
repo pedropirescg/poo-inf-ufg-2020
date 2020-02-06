@@ -1,4 +1,5 @@
 package aula11.salaaula.factory_method.ex01;
 
-public class TipoMensagem {
+public abstract class TipoMensagem {
+    public abstract Mensagem criaMensagem(String tipo, String cliente);
 }
