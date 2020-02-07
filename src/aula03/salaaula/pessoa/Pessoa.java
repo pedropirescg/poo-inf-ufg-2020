@@ -1,4 +1,4 @@
-package aula03.salaaula;
+package aula03.salaaula.pessoa;
 
 import java.util.Date;
 

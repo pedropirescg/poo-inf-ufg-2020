@@ -1,4 +1,4 @@
-package aula03.salaaula;
+package aula03.salaaula.quadrado;
 
 public class TestaQuadrado {
     public static void main(String[] args) {

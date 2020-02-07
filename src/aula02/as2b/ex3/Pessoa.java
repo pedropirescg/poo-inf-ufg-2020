@@ -1,6 +1,7 @@
 package aula02.as2b.ex3;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Pessoa{
     private String nome;
@@ -8,14 +9,16 @@ public class Pessoa{
     private OlhosPessoa corDosOlhos;
     private CabeloPessoa corDoCabelo;
     private LocalDate dataNascimento;
+    private int rollnumber;
 
     public Pessoa(String nome, SexoPessoa sexo, OlhosPessoa corDosOlhos,
-                  CabeloPessoa corDoCabelo, LocalDate dataNascimento){
+                  CabeloPessoa corDoCabelo, LocalDate dataNascimento, int rollnumber){
         this.nome = nome;
         this.sexo = sexo;
         this.corDosOlhos = corDosOlhos;
         this.corDoCabelo = corDoCabelo;
         this.dataNascimento = dataNascimento;
+        this.rollnumber = rollnumber;
     }
 
     public Pessoa(){
@@ -62,13 +65,17 @@ public class Pessoa{
         this.dataNascimento = dataNascimento;
     }
 
+    public int getIdade() {
+        return Period.between(this.dataNascimento, LocalDate.now()).getYears();
+    }
+
     public String toString(){
         StringBuffer sb = new StringBuffer();
-        sb.append("\n" + nome);
-        sb.append("\n" + corDoCabelo);
-        sb.append("\n" + corDosOlhos);
-        sb.append("\n" + dataNascimento);
-        sb.append("\n" + sexo);
+        sb.append("\nNome: " + nome);
+        sb.append("\nCor do Cabelo: " + corDoCabelo);
+        sb.append("\nCor dos Olhos: " + corDosOlhos);
+        sb.append("\nData de Nascimento: " + dataNascimento);
+        sb.append("\nSexo: " + sexo);
         return sb.toString();
     }
 

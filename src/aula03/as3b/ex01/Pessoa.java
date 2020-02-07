@@ -1,32 +1,26 @@
-package aula03.as3b.exercicio01;
+package aula03.as3b.ex01;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.Period;
 
 public class Pessoa {
 
     private String nome;
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
     private double altura;
 
     public Pessoa(){
 
     }
 
-    public Pessoa(String nome, Date data, double alt){
+    public Pessoa(String nome, LocalDate data, double alt){
         this.nome = nome;
         this.dataNascimento = data;
         this.altura = altura;
     }
 
-    //calcula somente o ano.
-    public int calculaIdade(Date dataNascimento){
-        Calendar cal = Calendar.getInstance();
-        int anoAtual = cal.get(Calendar.YEAR);
-        cal.setTime(dataNascimento);
-        int anoNascimento = cal.get(Calendar.YEAR);
-        return anoAtual - anoNascimento;
+    public int getIdade() {
+        return Period.between(this.dataNascimento, LocalDate.now()).getYears();
     }
 
     public String getNome() {
@@ -37,11 +31,11 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
@@ -55,8 +49,8 @@ public class Pessoa {
 
     public String toString(){
             StringBuffer sb = new StringBuffer();
-            sb.append("\nNome: " + nome);
-            sb.append("\nData de Nascimento: " + dataNascimento);
+            sb.append("\nNome: " + getNome());
+            sb.append("\n idade: " + getIdade());
             return sb.toString();
         }
 }
