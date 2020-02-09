@@ -14,7 +14,7 @@ public class Cliente {
 
     public String toString(){
         StringBuffer sb = new StringBuffer();
-        sb.append("A conta do cliente: " + nome);
-        return toString();
+        sb.append("A conta do cliente: " + this.getNome());
+        return sb.toString();
     }
 }

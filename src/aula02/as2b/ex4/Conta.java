@@ -30,8 +30,8 @@ public class Conta {
 
     public String toString(){
         StringBuffer sb = new StringBuffer();
-        sb.append(saldo);
-        sb.append(" possui limite de" + limite + " reais.");
-        return toString();
+        sb.append(this.getSaldo());
+        sb.append(" possui limite de" + this.getLimite() + " reais.");
+        return sb.toString();
     }
 }

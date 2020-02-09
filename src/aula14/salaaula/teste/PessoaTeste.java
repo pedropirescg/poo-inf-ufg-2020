@@ -1,11 +1,7 @@
 package aula14.salaaula.teste;
 
 import org.junit.Before;
-import org.junit.jupiter.api.Test;
-import aula03.as3b.ex01.Pessoa;
-import util.ConverteData;
-
-import static org.junit.jupiter.api.Assertions.*;
+import aula03.as3b.ex1.Pessoa;
 
 class PessoaTeste {
 

@@ -23,7 +23,7 @@ public class Carro {
 
     public String toString(){
         StringBuffer sb = new StringBuffer();
-        sb.append("\nO custo de fábrica é: " + custoFabrica);
-        return toString();
+        sb.append("\nO custo de fábrica é: " + this.getCustoFabrica());
+        return sb.toString();
     }
 }

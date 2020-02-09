@@ -71,11 +71,11 @@ public class Pessoa{
 
     public String toString(){
         StringBuffer sb = new StringBuffer();
-        sb.append("\nNome: " + nome);
-        sb.append("\nCor do Cabelo: " + corDoCabelo);
-        sb.append("\nCor dos Olhos: " + corDosOlhos);
-        sb.append("\nData de Nascimento: " + dataNascimento);
-        sb.append("\nSexo: " + sexo);
+        sb.append("\nNome: " + this.getNome());
+        sb.append("\nCor do Cabelo: " + this.getCorDoCabelo());
+        sb.append("\nCor dos Olhos: " + this.getCorDosOlhos());
+        sb.append("\nData de Nascimento: " + this.getDataNascimento());
+        sb.append("\nSexo: " + this.getSexo());
         return sb.toString();
     }
 

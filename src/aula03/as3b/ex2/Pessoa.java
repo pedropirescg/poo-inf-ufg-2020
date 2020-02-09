@@ -1,4 +1,4 @@
-package aula03.as3b.ex02;
+package aula03.as3b.ex2;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -38,8 +38,11 @@ public class Pessoa {
         this.altura = altura;
     }
 
-    public int getIdade() {
-        return Period.between(this.dataNascimento, LocalDate.now()).getYears();
+    public String toString() {
+        StringBuffer sb = new StringBuffer();
+        sb.append(this.getNome());
+        sb.append(this.getDataNascimento());
+        sb.append(this.getAltura());
+        return sb.toString();
     }
-
 }

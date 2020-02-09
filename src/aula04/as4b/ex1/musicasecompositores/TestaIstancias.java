@@ -1,4 +1,4 @@
-package aula04.as4b.ex1;
+package aula04.as4b.ex1.musicasecompositores;
 
 public class TestaIstancias {
     public static void main(String[] args) {

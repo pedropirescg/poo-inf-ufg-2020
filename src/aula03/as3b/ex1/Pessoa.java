@@ -1,4 +1,4 @@
-package aula03.as3b.ex01;
+package aula03.as3b.ex1;
 
 import java.time.LocalDate;
 import java.time.Period;

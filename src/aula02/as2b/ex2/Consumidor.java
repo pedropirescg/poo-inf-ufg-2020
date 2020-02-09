@@ -13,7 +13,7 @@ public class Consumidor {
 
     public String toString(){
         StringBuffer sb = new StringBuffer();
-        sb.append("\nOrçamento do cliente: " + nome);
+        sb.append("\nOrçamento do cliente: " + this.getNome());
         return toString();
     }
 }

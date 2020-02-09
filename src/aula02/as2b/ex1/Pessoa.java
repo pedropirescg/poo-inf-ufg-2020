@@ -26,8 +26,8 @@ public class Pessoa {
 
     public String toString(){
         StringBuffer sb = new StringBuffer();
-        sb.append("\nNome: " + nome);
-        sb.append("\nData de Nascimento: " + dataNascimento);
+        sb.append("\nNome: " + this.getNome());
+        sb.append("\nData de Nascimento: " + this.getDataNascimento());
         return sb.toString();
     }
 }

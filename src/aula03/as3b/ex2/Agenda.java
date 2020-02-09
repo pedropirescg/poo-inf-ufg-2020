@@ -1,6 +1,7 @@
-package aula03.as3b.ex02;
+package aula03.as3b.ex2;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 
 public class Agenda{
