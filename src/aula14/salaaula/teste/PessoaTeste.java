@@ -1,7 +1,7 @@
 package aula14.salaaula.teste;
 
 import org.junit.Before;
-import aula03.as3b.ex1.Pessoa;
+import aula03.as3b.exercicio01.Pessoa;
 
 class PessoaTeste {
 
