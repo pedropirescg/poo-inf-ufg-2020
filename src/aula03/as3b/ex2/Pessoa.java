@@ -8,6 +8,12 @@ public class Pessoa {
     private LocalDate dataNascimento;
     private float altura;
 
+    public Pessoa(String nome, LocalDate idade, float altura){
+        this.nome = nome;
+        this.dataNascimento = idade;
+        this.altura = altura;
+    }
+
     public String getNome() {
         return nome;
     }
