@@ -36,11 +36,11 @@ public class TestaAgenda {
                 try {
                 Scanner sc1 = new Scanner(System.in);
                 System.out.println("Digite os dados do contato: Nome, Data de Nascimento e Altura.");
-                if(sc1.hasNextLine()){
-                    agenda.armazenaPessoa(sc.nextLine(), sc.nextLine(), Float.parseFloat(sc.nextLine()));
-                    System.out.println(agenda);
-                    gravaArquivo.printf(agenda.toString());
-                }
+                    if(sc1.hasNextLine()){
+                        agenda.armazenaPessoa(sc.nextLine(), sc.nextLine(), Float.parseFloat(sc.nextLine()));
+                        System.out.println(agenda);
+                        gravaArquivo.printf(agenda.toString());
+                    }
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
